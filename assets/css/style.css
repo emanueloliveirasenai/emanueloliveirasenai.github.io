@@ -1,25 +1,66 @@
-body{
-    background-color: #f2f0f0;
-}
-header{
-    margin: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-header h4{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-header img{
-    height: 100px;
-    margin-top: 30px;
+
+body{
+    background-color: #1E1E1E;
+    color: #F5F5F5;
+    font-family: 'popins';
+    display: flex;
 }
-.social-links a{
-    float: right;
+
+.menu-lateral{
+    width: 280px;
+    height: 100vh;
+    background-color: #121212;
+    padding: 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-lateral header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.menu-lateral header img{
     width: 60px;
-    font-size: 40px;
-    margin-top: -30px;
-    color: ;
+    height: 60px;
+    object-fit: cover;
+}
+
+.menu-lateral header h4{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.menu-lateral ul{
+    list-style: none;
+}
+
+.menu-lateral ul li a{
+    display: block;
+    color: #F5F5F5;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.menu-lateral ul li a:hover{
+    background-color: #E53935;
+    color: #FFFFFF;
+
+
 }

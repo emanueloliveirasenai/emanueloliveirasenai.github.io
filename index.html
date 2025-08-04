@@ -3,22 +3,83 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevPortfolio</title>
-        <link rel="icon" type="image/png" href="assets/img/IMG_3340[1].PNG">
+        <title>Emanuel - DevPortfolio</title>
+        <link rel="icon" type="image/png" href="assets/img/logo-pag.PNG">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <link rel="stylesheet" id="text/css" href="assets/css/style.css">
     </head>
-    <header>
-        <img src="assets/img/IMG_3340[1].PNG" alt="Logo da página" title="Logo da página">
-        <h4>Emanuel Antonio de Oliveira</h4>
-        <div class="social-links">
-            <a target="_blank" href="https://linkedin.com/in/EmanuelOliveira-"><i class="fa-brands fa-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/emanueloliveirasenai"><i class="fa-brands fa-github"></i></a>
-            <a target="_blank" href="https://www.instagram.com/emanuel_oliveira2002?igsh=MWE2MTN1cWk0aXp0cw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-            <a target="_blank" href="https://wa.me/47992652399"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-    </header>
-    <body>
-
+    <body id="inicio">
+        <nav class="menu-lateral">
+            <header>
+                <img src="assets/img/logo-pag.PNG" alt="Logo da Página" title="Logo da página">
+                <h4>Emanuel Antônio de Oliveira</h4>
+            </header>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <main class="conteudo-principal">
+            <section id="sobre">
+                <h2>Sobre mim:</h2>
+                <img src="assets/img/minha-foto.JPEG" alt="Minha Foto" title="Minha Foto">
+                <p>Olá, meu nome é Emanuel, sou um entusiasta da tecnologia, estudante de <br>
+                Análise e Desenvolvimento de Sistemas, apaixonado por criar soluções inovadoras <br>
+                e interfaces intuitivas!</p>
+                <div class="tecnologias">
+                    <h3>Tecnologias:</h3>
+                    <div class="logos">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                    </div>
+                </div>
+            </section>
+            <section id="formacao">
+                <h2>Formação:</h2>
+                <ul>
+                    <li>
+                        <h3>SENAI JOINVILLE</h3>
+                        <p>Análise e Desenvolvimento de Sistemas - Conclusão: 2027</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="projetos">
+                <h2>Projetos:</h2>
+                <article class="card-projeto">
+                    <h3>Projeto Fã Clube</h3>
+                    <p>Neste projeto, montamos um fã clube para algo que admiramos, eu criei um site falando sobre o 
+                        parque Beto Carrero World!
+                    </p>
+                    <a target="_blank" href="https://github.com/emanueloliveirasenai/projeto-fa-clube.git">Ver no GitHub</a>
+                </atricle>
+                <article class="card-projeto">
+                    <h3>Cartão de visita</h3>
+                    <p>Aqui montei um cartão de visita com meus links de contato para quando for mandar ou
+                        encaminhar para alguém!
+                    </p>
+                    <a target="_blank" href="https://github.com/emanueloliveirasenai/Cartao-de-Visita.git">Ver no GitHub</a>
+                </article>
+            </section>
+            <section id="contato">
+                <h2>Contato:</h2>
+                <p>Você pode me encontrar nos links abaixo ou pelo e-mail!</p>
+                <div class="links-sociais">
+                    <a href="https://www.linkedin.com/in/emanueloliveira-" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/emanueloliveirasenai" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/emanuel_oliveira2002/?igsh=MWE2MTN1cWk0aXp0cw%3D%3D&utm_source=qr#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/47992652399" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:manobv@icloud.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </section>
+        </main>
+        <a href="#inicio" id="btn-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <footer>Copyright &copy; Portfolio Emanuel</footer>
     </body>
 </html>
