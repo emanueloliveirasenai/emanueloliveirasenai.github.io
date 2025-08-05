@@ -90,6 +90,7 @@ body{
 
 .tecnologias{
     margin-top: 30px;
+    clear: left;
 }
 
 .tecnologias h3{
@@ -116,15 +117,26 @@ body{
     overflow: auto;
 }
 
+#sobre::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 #sobre img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    float: left;
     margin-right: 20px;
     margin-bottom: 10px;
+}
+
+.sobre-conteudo{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .card-projeto {
