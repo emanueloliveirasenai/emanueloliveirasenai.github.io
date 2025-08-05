@@ -193,6 +193,13 @@ body{
     font-size: 1.5em;
     text-decoration: none;
     transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-topo.visivel{
+    opacity: 1;
+    visibility: visible;
 }
 
 #btn-topo:hover{
