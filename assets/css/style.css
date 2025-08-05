@@ -1,57 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-html{
+html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-*, *::before, *::after{
+*, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
-
-body{
+body {
     background-color: #1E1E1E;
     color: #F5F5F5;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
     display: flex;
 }
 
-.menu-lateral{
+.menu-lateral {
     width: 280px;
     height: 100vh;
     background-color: #121212;
     padding: 20px;
-
     position: fixed;
     top: 0;
     left: 0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
 }
-
-.menu-lateral header{
+.menu-lateral header {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 30px;
 }
-
-.menu-lateral header img{
+.menu-lateral header img {
     width: 60px;
     height: 60px;
     object-fit: cover;
 }
-
-.menu-lateral header h4{
+.menu-lateral header h4 {
     font-size: 1.1em;
     font-weight: 600;
 }
-
-.menu-lateral ul{
+.menu-lateral ul {
     list-style: none;
 }
-
-.menu-lateral ul li a{
+.menu-lateral ul li a {
     display: block;
     color: #F5F5F5;
     text-decoration: none;
@@ -61,8 +55,8 @@ body{
     font-weight: 400;
     transition: all 0.3s ease;
 }
-
-.menu-lateral ul li a:hover{
+.menu-lateral ul li a:hover,
+.menu-lateral ul li a.active {
     background-color: #E53935;
     color: #FFFFFF;
 }
@@ -71,72 +65,52 @@ body{
     flex: 1;
     padding: 40px;
     margin-left: 280px;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
-.conteudo-principal section{
+.conteudo-principal section {
     margin-bottom: 60px;
 }
-
-.conteudo-principal h2{
+.conteudo-principal h2 {
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 20px;
     color: #E53935;
 }
 
-.tecnologias{
-    margin-top: 30px;
-    clear: left;
+.sobre-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
 }
-
-.tecnologias h3{
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sobre-texto {
+    flex: 1;
+    text-align: left;
+}
+.tecnologias {
+    margin-top: 40px;
+}
+.tecnologias h3 {
     margin-bottom: 15px;
-    font-weight: 600;
 }
-
-.logos{
+.logos {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-
-.logos img{
+.logos img {
     height: 65px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
-
-.logos img:hover{
-   transform: scale(1.1) translateY(-5px);
-}
-
-#sobre{
-    overflow: auto;
-}
-
-#sobre::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-#sobre img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-.sobre-conteudo{
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+.logos img:hover {
+    transform: scale(1.1);
 }
 
 .card-projeto {
@@ -147,92 +121,52 @@ body{
     border-left: 5px solid #E53935;
     transition: transform 0.3s ease;
 }
-
-.card-projeto:hover{
+.card-projeto:hover {
     transform: translateY(-5px);
 }
-
-.card-projeto h3{
-    margin: 20px;
+.card-projeto h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
-
-.card-projeto a{
+.card-projeto a {
     display: inline-block;
     color: #ffffff;
     background-color: #E53935;
     text-decoration: none;
-    margin: 25px;
     padding: 10px 15px;
     border-radius: 5px;
     margin-top: 15px;
     font-weight: 600;
     transition: background-color 0.3s ease;
 }
-
-.card-projeto a:hover{
+.card-projeto a:hover {
     background-color: #C62828;
 }
 
-.links-sociais a{
-    margin: 20px;
+.links-sociais a {
     font-size: 2.5em;
     color: #F5F5F5;
     margin-right: 20px;
     transition: color 0.3s ease;
 }
-
-.links-sociais a:hover{
+.links-sociais a:hover {
     color: #E53935;
-}
-
-#btn-topo{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    
-    width: 50px;
-    height: 50px;
-    background-color: #E53935;
-    color: #FFFFFF;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 1.5em;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#btn-topo.visivel{
-    opacity: 1;
-    visibility: visible;
-}
-
-#btn-topo:hover{
-    transform: translateY(-5px);
 }
 
 .rodape {
     border-top: 1px solid #2c2c2c;
     padding: 30px 0;
-    margin-top: auto; 
-    text-align: center; 
+    margin-top: auto;
+    text-align: center;
     width: 100%;
 }
-
 .rodape p {
     font-size: 0.9em;
     color: #a0a0a0;
 }
 
 .btn-hamburger {
-    display: none; 
+    display: none;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -244,29 +178,67 @@ body{
     height: 50px;
     font-size: 1.5em;
     cursor: pointer;
-    z-index: 1000; 
+    z-index: 1000;
+}
+#btn-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #E53935;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#btn-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+}
+#btn-topo:hover {
+    transform: translateY(-5px);
 }
 
+@media (max-width: 768px) {
 
-@media (max-width: 768px){
-   .menu-lateral {
-    transform: translateY(-100%); 
-    transition: transform 0.3s ease-in-out;
-    z-index: 999; 
-}
+    .menu-lateral {
+        transform: translateX(-100%);
+    }
 
-.menu-lateral.aberto {
-    transform: translateX(0);
-}
+    .menu-lateral.aberto {
+        transform: translateX(0);
+    }
 
-.btn-hamburger {
-    display: block; 
-    
-}
+    .btn-hamburger {
+        display: block;
+    }
 
-.conteudo-principal {
-    margin-left: 0;
-    padding: 20px;
-    padding-top: 80px; 
-}
+    .conteudo-principal {
+        margin-left: 0;
+        padding: 20px;
+        padding-top: 80px; 
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .foto-perfil {
+        margin-bottom: 30px;
+    }
+    .sobre-texto {
+        width: 100%;
+    }
+    .logos {
+        justify-content: center;
+    }
 }
