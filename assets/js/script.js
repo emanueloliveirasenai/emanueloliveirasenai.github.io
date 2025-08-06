@@ -49,8 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 secaoAtivaId = secao.getAttribute('id');
             }
         });
+
+        linksDoMenu.forEach(link => {
+            link.classList.remove('active');
+            const href = link.getAttribute('href');
+            if (href === `#${secaoAtivaId}`) {
+                link.classList.add('active');
+            }
+        });
     };
 
     window.addEventListener('scroll', handleScroll);
+});
 
+AOS.init({
+    duration: 800,
+    once: true,
 });
