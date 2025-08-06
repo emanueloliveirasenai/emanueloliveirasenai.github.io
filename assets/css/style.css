@@ -40,8 +40,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 #entrada .conteudo-entrada img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    animation: fadeIn 1.5s ease-out forwards;
+    transform: translateY(20px);
 }
 #entrada h1 {
     font-size: 5rem;
